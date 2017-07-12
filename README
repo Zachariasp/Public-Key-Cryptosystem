@@ -1,0 +1,41 @@
+Zacharias Shufflebarger
+zachariaspike@gmail.com
+CS 427
+
+Project 2:
+   Encryption and decryption algorithms using modular exponentiation and prime
+   factorization security. 
+
+To Build:
+   A Makefile has been supplied. Simply type 'make' and it will produce a
+   program named 'main.'
+
+To Run:
+  1 Create two files for the program to read, ptext.txt and ctext.txt. These
+    should contain the plaintext you wish to have encrypted and the ciphertext
+    you wish to decrypt, respectively. 
+  2 You should first call this program with the -g command line option to
+    initiate key generation. It will fail horribly if you do not.
+  3 Once the private and public keys have been generated, call either
+    encryption or decryption at your leisure. They will write to ctext.out and
+    ptext.out, respectively. This way, your test files (.txt) are safe.
+   
+   Call this program using one command line argument
+   
+     -g selects the key generation, which writes to pubkey.txt and prikey.txt.
+     -e selects encryption, which reads from the key files and ptext.txt,
+          it writes to ctext.out
+     -d selects decryption, which reads from the key files and ctext.txt,
+          it writes to ptext.out.
+
+   Example, generate keys:
+    $ ./main -g
+
+Files:
+   main.c:     The program in question.
+   Makefile:   Easy compilation of program. Type 'make'.
+   README:     This thing you're reading.
+   ptext.txt:  My test plaintext.
+   ctext.txt:  The ciphertext of my test plaintext.
+   
+  

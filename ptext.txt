@@ -1,0 +1,4 @@
+This is a short test of my encryption function.
+It has a few lines.
+
+That last one was blank!
